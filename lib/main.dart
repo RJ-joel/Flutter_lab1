@@ -22,29 +22,16 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            MyListItem(
-                foodname: 'GulabJamun',
-                imageurl: 'assets/images/gulab_jamun.jpg',
-                price: 120.0),
-            MyListItem(
-                foodname: 'Palkova',
-                imageurl: 'assets/images/palkova.jpg',
-                price: 150.0),
-            MyListItem(
-                foodname: 'KajuBarfi',
-                imageurl: 'assets/images/kaju_Barfi.jpg',
-                price: 250.0),
-            MyListItem(
-                foodname: 'Rasamalai',
-                imageurl: 'assets/images/rasmalai.jpg',
-                price: 180.0),
+            MyListItem(foodname: 'GulabJamun',imageurl: 'assets/images/gulab_jamun.jpg',price: 120.0),
+            MyListItem(foodname: 'Palkova',imageurl: 'assets/images/palkova.jpg',price: 150.0),
+            MyListItem(foodname: 'KajuBarfi',imageurl: 'assets/images/kaju_Barfi.jpg',price: 250.0),
+            MyListItem(foodname: 'Rasamalai',imageurl: 'assets/images/rasmalai.jpg',price: 180.0),
           ],
         ),
       ),
     );
   }
 }
-
 class MyListItem extends StatelessWidget {
   final String foodname, imageurl;
   final double price;
